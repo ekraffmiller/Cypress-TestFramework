@@ -9,7 +9,7 @@ Given('As a user I want to execute Pokemon GET api for Pokemon {string}', (poken
     }).as('get_pokemon_data')
   
   });
-  
+  // Testing a code change
   Then('Verify {string} response status code is {int}', (requestAliasName, statusCode) => {
     cy.get(`${requestAliasName}`).should((response)=> {
       expect(response.status).to.eq(statusCode);
